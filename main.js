@@ -13,7 +13,7 @@ $('document').ready(() => {
 });
 
 // helpers
-const computeRefWidth  = function () {
+const computeRefWidth = function () {
     targetAutoCompleteList = null;
     setTimeout(() => {
         refWidth = $('.searchbarcontainer').outerWidth(); //parent's width
@@ -30,14 +30,14 @@ const configureAutoComplete = function () {
             $('#ui-id-1').css('max-width', refWidth);
             $('#ui-id-1').css('min-width', refWidth);
             $('.searchbarcontainer').css('border-bottom-left-radius','0px'  );
-            $('.searchbarcontainer').css('border-bottom-right-radi us','0px');
+            $('.searchbarcontainer').css('border-bottom-right-radius','0px');
             $('#ui-id-1').position({my: 'left top', at: 'left bottom', of: $('.searchbarcontainer'), collision: 'fit'});
             appendActionsToUAutoCompleteUl();
         }, 
         close: function( event, ui ) {
-            $('.searchbarcontainer').css('border-bottom-left-radius','25px'  );
-            $('.searchbarcontainer').css('border-bottom-right-radius','25px');
-            appendActionsToUAutoCompleteUl();
+          $('.searchbarcontainer').css('border-bottom-left-radius','25px'  );
+          $('.searchbarcontainer').css('border-bottom-right-radius','25px');
+          appendActionsToUAutoCompleteUl();
         }
           
     };
